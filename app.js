@@ -25,9 +25,9 @@ app.use((req, resp, next) => {
     next();
 });
 
-app.use((req, resp, next) => {
-    resp.render("maintenance.hbs");
-});
+// app.use((req, resp, next) => {
+//     resp.render("maintenance.hbs");
+// });
 
 // Statische Seiten bekannt machen
 app.use(express.static(__dirname + "/public"));
